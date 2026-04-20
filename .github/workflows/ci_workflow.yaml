@@ -9,3 +9,10 @@ jobs:
     steps:
       - name: clone_repository
         uses: actions/checkout@v4
+        
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentails@v4
+        with:
+          aws-access-key-id: AKIARR3TNHV2CYRSXOEX
+          aws-secret-key-id: gM82aq3U6JeW74g+ETtcERR6US/DaTa+KtvabVrB
+          aws-region: us-east-2 
