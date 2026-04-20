@@ -1,1 +1,11 @@
+name: CI pipeline customer
 
+on:
+  workflow_dispatch:
+
+jobs:
+  BUILD:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone_repository
+        uses: actions/checkout@v4
